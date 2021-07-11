@@ -2,7 +2,6 @@ import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Cliente from 'App/Models/Cliente'
 
 export default class ClienteController {
-
   public async create ({ request }: HttpContextContract) {
     const { codigo, nome } = request.only(['codigo', 'nome'])
     const cliente = await Cliente.create({ codigo, nome })
