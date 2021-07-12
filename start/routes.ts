@@ -20,3 +20,7 @@ Route.group(() => {
   Route.get('/list', 'FacturaController.list')
   Route.post('/create', 'FacturaController.create')
 }).prefix('/factura')
+
+Route.group(() => {
+  Route.get('/FacturasPorCliente', 'DashboardController.FacturasPorCliente')
+}).prefix('/dashboard')
