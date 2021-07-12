@@ -15,3 +15,8 @@ Route.group(() => {
   Route.put('/update/:id', 'ProdutoController.update')
   Route.delete('/delete/:id', 'ProdutoController.delete')
 }).prefix('/produto')
+
+Route.group(() => {
+  Route.get('/list', 'FacturaController.list')
+  Route.post('/create', 'FacturaController.create')
+}).prefix('/factura')
