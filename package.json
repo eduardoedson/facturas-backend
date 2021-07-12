@@ -7,7 +7,7 @@
   },
   "private": true,
   "scripts": {
-    "prestart": "node ace make migration:run",
+    "prebuild": "node ace make migration:run",
     "build": "node ace build --production",
     "start": "ENV_SILENT=true node build/server.js",
     "dev": "node ace serve --watch",
