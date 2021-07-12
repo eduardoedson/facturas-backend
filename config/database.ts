@@ -23,6 +23,8 @@ const databaseConfig: DatabaseConfig = {
       healthCheck: false,
       debug: false,
     },
+    pool: { min: 2, max: 20 },
+    acquireConnectionTimeout: 10000,
   },
 }
 
